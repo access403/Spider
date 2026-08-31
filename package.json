@@ -1,59 +1,49 @@
-{
-  "name": "gods-eye-view",
+﻿{
+  "name": "spider",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.1.0",
-  "description": "A real-time intelligence console for planet Earth — photorealistic 3D globe, live aircraft/ships/satellites/earthquakes/CCTV, and hands-free voice control. Runs in a browser.",
-  "type": "module",
+  "description": "Spider — real-time spatial intelligence platform built on a photorealistic 3D globe, integrating ADS-B, AIS, TLE, seismic, CCTV and voice-driven interaction.",
+  "author": "Team Spider <team@spider.example>",
   "license": "MIT",
-  "author": "Bilawal Sidhu",
-  "homepage": "https://github.com/bilawalsidhu/gods-eye-view#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bilawalsidhu/gods-eye-view.git"
-  },
-  "bugs": {
-    "url": "https://github.com/bilawalsidhu/gods-eye-view/issues"
-  },
-  "engines": {
-    "node": ">=24.14.0 <25 || >=26 <27"
-  },
-  "keywords": [
-    "cesium",
-    "3d-globe",
-    "geospatial",
-    "osint",
-    "spatial-intelligence",
-    "photorealistic-3d-tiles",
-    "adsb",
-    "ais",
-    "satellites",
-    "voice-control",
-    "openai-realtime",
-    "visualization"
-  ],
   "scripts": {
     "dev": "vite",
-    "dev:secure": "./scripts/dev-secure.sh",
-    "opensky:import": "./scripts/opensky-import-client.sh",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "node scripts/run-unit-tests.mjs",
-    "test:track": "node scripts/track-regression.mjs",
-    "qa:map-source-tray": "node scripts/qa-map-source-tray.mjs"
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --max-warnings=0",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "test": "vitest",
+    "start": "npm run dev"
   },
   "dependencies": {
-    "@mapbox/vector-tile": "^3.0.0",
-    "cesium": "^1.124.0",
-    "egm96-universal": "^1.1.1",
-    "mgrs": "^2.1.0",
-    "pbf": "^5.1.2",
-    "satellite.js": "^6.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.160.0",
+    "cesium": "^1.111.0",
+    "three-stdlib": "^2.15.0",
+    "zustand": "^4.3.8",
+    "axios": "^1.4.0",
+    "howler": "^2.2.3",
+    "dayjs": "^1.11.9",
+    "socket.io-client": "^4.7.2",
+    "@googlemaps/3dtiles": "^1.0.0",
+    "normalize.css": "^8.0.1",
+    "regenerator-runtime": "^0.13.11"
   },
   "devDependencies": {
-    "puppeteer": "^24.37.5",
-    "sharp": "^0.34.5",
-    "vite": "^6.0.0",
-    "vite-plugin-cesium": "^1.2.23",
-    "ws": "^8.21.0"
+    "typescript": "^5.4.2",
+    "vite": "^5.1.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "esbuild": "^0.18.21",
+    "vitest": "^1.4.5",
+    "eslint": "^8.43.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^2.8.8",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/node": "^20.5.6",
+    "msw": "^1.2.3"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
