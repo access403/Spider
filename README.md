@@ -1,6 +1,7 @@
 <div align="center">
 
 # 🕸 Spider
+# [God's Eye View]
 
 ### A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.
 
@@ -25,7 +26,7 @@ Photorealistic 3D globe. Live aircraft, ships, satellites, earthquakes, traffic,
 
 ## 🌍 Why This Exists
 
-**You asked, so it's happening.** God's Eye View is open source. Track the world live. Talk to it. Break it. Extend it.
+**You asked, so it's happening.** 🕸 Spider  is open source. Track the world live. Talk to it. Break it. Extend it.
 
 Most open-source intelligence is a pile of browser tabs. The signals are abundant, but the *interface* is the bottleneck. God's Eye View turns those signals into a **place**: the world is already broadcasting — flight transponders, ship beacons, orbital elements, seismographs, public cameras — and this makes it visible on a photorealistic 3D Earth in real time. No classified clearance required; it's public signal all the way down, and the interface runs in your browser, under your control.
 
