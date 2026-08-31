@@ -1,10 +1,10 @@
 <div align="center">
 
 # 🕸 Spider
-
-<img width="4000" height="4000" alt="Blood Orange And Marigold Geometric FoodDrink Logo" src="https://github.com/user-attachments/assets/86fd48dc-b42a-4a3f-b949-4e79e5dabd68" />
-
 # [God's Eye View]
+
+<img width="4000" height="4000" alt="Blood Orange And Marigold Geometric FoodDrink Logo (1)" src="https://github.com/user-attachments/assets/024c0500-025d-4087-8b9d-2cca2f40244e" />
+
 
 ### A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.
 
